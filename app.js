@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }))
 
 app.post("/", async (req, res, next) => {
-
+    
     const { email, name } = req.body
 
     if (!email) {
